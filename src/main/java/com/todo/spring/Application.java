@@ -25,11 +25,6 @@ public class Application {
                 .forEach(todosRepository::add);
     }
 
-    public static String getServerUrl() {
-        return "http://192.168.0.101:8080/api";
-//        return "http://192.168.2.109:8080/api";
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
