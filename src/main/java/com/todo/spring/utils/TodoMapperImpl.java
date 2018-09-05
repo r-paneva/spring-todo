@@ -18,7 +18,7 @@ public class TodoMapperImpl implements TodoMapper {
         vm.id = model.getId();
         vm.title = model.getTitle();
         vm.description = model.getDescription();
-        vm.status = model.getStatus();
+        vm.isActive = model.getStatus();
         return vm;
     }
 
@@ -44,7 +44,7 @@ public class TodoMapperImpl implements TodoMapper {
         vm.id  = model.getId();
         vm.title = model.getTitle();
         vm.description = model.getDescription();
-        vm.status = model.getStatus();
+        vm.isActive = model.getStatus();
         return vm;
     }
 }

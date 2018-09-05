@@ -6,23 +6,23 @@ public class Todo extends ModelBase{
 
     private String title;
     private String description;
-    private Boolean status;
+    private Boolean isActive;
 
-    public Todo(String title, String description, Boolean status) {
+    public Todo(String title, String description, Boolean isActive) {
         this.title = title;
         this.description = description;
-        this.status = status;
+        this.isActive = isActive;
     }
 
     public Todo() {
     }
 
     public void setStatus(Boolean status) {
-        this.status = status;
+        this.isActive = status;
     }
 
     public Boolean getStatus() {
-        return status;
+        return isActive;
     }
 
     public String getTitle() {
