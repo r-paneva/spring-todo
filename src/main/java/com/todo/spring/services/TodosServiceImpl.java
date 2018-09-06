@@ -23,7 +23,7 @@ public class TodosServiceImpl implements TodosService {
     }
 
     @Override
-    public Todo findTodoById(int id) {
+    public Todo getTodoById(int id) {
         return this.todoRepository.findById(id);
     }
 
@@ -32,4 +32,5 @@ public class TodosServiceImpl implements TodosService {
         todoRepository.add(todo);
         return todo;
     }
+
 }

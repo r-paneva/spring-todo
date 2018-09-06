@@ -8,7 +8,7 @@ public interface TodosService {
 
     List<Todo> getAllTodos();
 
-    Todo findTodoById(int id);
+    Todo getTodoById(int id);
 
     Todo create(Todo todo);
 

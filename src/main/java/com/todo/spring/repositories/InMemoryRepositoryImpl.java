@@ -33,10 +33,10 @@ public class InMemoryRepositoryImpl<T extends ModelBase> implements GenericRepos
     }
 
     @Override
-    public void add(T superhero) {
+    public void add(T todo) {
         int nextId = this.getNextId();
-        superhero.setId(nextId);
-        this.items.add(superhero);
+        todo.setId(nextId);
+        this.items.add(todo);
     }
 
     private int getNextId() {

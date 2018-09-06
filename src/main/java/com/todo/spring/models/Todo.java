@@ -8,10 +8,10 @@ public class Todo extends ModelBase{
     private String description;
     private Boolean isActive;
 
-    public Todo(String title, String description, Boolean isActive) {
+    public Todo(String title, String description, Boolean status) {
         this.title = title;
         this.description = description;
-        this.isActive = isActive;
+        this.isActive = status;
     }
 
     public Todo() {
