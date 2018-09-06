@@ -28,8 +28,8 @@ public class TodosServiceImpl implements TodosService {
     }
 
     @Override
-    public void create(Todo todo) {
-        todoRepository.create(todo);
+    public Todo create(Todo todo) {
+        return todoRepository.create(todo);
     }
 
     @Override

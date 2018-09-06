@@ -30,9 +30,9 @@ public class TodoApiController {
         return service.getTodoById(id);
     }
 
-    @PostMapping("/{new}")
-    public void createTodo(@RequestBody Todo todo) {
-        service.create(todo);
+    @PostMapping
+    public Todo createTodo(@RequestBody Todo todo) {
+        return service.create(todo);
     }
 
     @PutMapping("/{id}")

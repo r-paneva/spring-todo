@@ -19,6 +19,13 @@ public class Application {
                         "flowers for your grandmother's birthday",
                         true),
                 new Todo("to finish my project",
+                        "finish project and upload it to monday", true),
+                new Todo("go to buy flowers",
+                        "flowers for your grandmother's birthday",
+                        true),
+                new Todo("to finish my project",
+                        "finish project and upload it to mondayasdasdasdasdasdqweqwee12312412412eqweqweqwdasdaczxc", true),
+                new Todo("to finish my project",
                         "finish project and upload it to monday", true)
         );
         initialTodos

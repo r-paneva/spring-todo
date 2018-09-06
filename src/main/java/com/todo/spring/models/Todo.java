@@ -4,17 +4,21 @@ import com.todo.spring.models.base.ModelBase;
 
 public class Todo extends ModelBase{
 
+    private static int counter = 1;
     private String title;
+    private int id;
     private String description;
-    private Boolean isActive;
+    private boolean isActive;
 
     public Todo(String title, String description, Boolean isActive) {
         this.title = title;
         this.description = description;
         this.isActive = isActive;
+        setId(counter++);
     }
 
     public Todo() {
+        // keep empty
     }
 
     public void setStatus(Boolean status) {
@@ -39,6 +43,14 @@ public class Todo extends ModelBase{
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
 }

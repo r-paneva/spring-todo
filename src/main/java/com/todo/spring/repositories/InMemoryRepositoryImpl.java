@@ -1,13 +1,10 @@
 package com.todo.spring.repositories;
 
-import com.todo.spring.models.Todo;
 import com.todo.spring.models.base.ModelBase;
 import com.todo.spring.repositories.base.GenericRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Repository
@@ -28,10 +25,11 @@ public class InMemoryRepositoryImpl<T extends ModelBase> implements GenericRepos
 
 
     @Override
-    public void create (T todo) {
+    public T create (T todo) {
         int nextId = this.getNextId();
         todo.setId(nextId);
         this.todos.add(todo);
+        return todo;
     }
 
 
