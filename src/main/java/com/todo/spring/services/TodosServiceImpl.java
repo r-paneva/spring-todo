@@ -28,9 +28,18 @@ public class TodosServiceImpl implements TodosService {
     }
 
     @Override
-    public Todo create(Todo todo) {
-        todoRepository.add(todo);
-        return todo;
+    public void create(Todo todo) {
+        todoRepository.create(todo);
+    }
+
+    @Override
+    public void update(int id, Todo todo) {
+        todoRepository.update(id, todo);
+    }
+
+    @Override
+    public void delete(int id) {
+        todoRepository.delete(id);
     }
 
 }

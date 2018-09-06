@@ -9,5 +9,9 @@ public interface GenericRepository<T extends ModelBase> {
 
     T findById(int id);
 
-    void add(T todo);
+    void create (T item);
+
+    void update (int id, T item);
+
+    void delete (int id);
 }
