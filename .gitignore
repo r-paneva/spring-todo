@@ -24,3 +24,7 @@
 /dist/
 /nbdist/
 /.nb-gradle/
+/mvnw.cmd
+/pom.xml
+/README.md
+/mvnw
