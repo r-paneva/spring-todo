@@ -9,7 +9,7 @@ public interface GenericRepository<T extends ModelBase> {
 
     T findById(int id);
 
-    T create (T item);
+    void create (T item);
 
     void update (int id, T item);
 

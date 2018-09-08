@@ -10,7 +10,7 @@ public interface TodosService {
 
     Todo getTodoById(int id);
 
-    Todo create(Todo todo);
+    void create(Todo todo);
 
     void update (int id, Todo todo);
 
