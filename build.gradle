@@ -1,4 +1,15 @@
-<<<<<<< HEAD
+buildscript {
+    ext {
+        springBootVersion = '2.0.4.RELEASE'
+    }
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
 plugins {
   id "io.ratpack.ratpack-groovy" version "1.5.4"
 }
@@ -19,18 +30,8 @@ dependencies {
 task stage {
   dependsOn installDist
 }
-=======
-buildscript {
-    ext {
-        springBootVersion = '2.0.4.RELEASE'
-    }
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
-}
+
+
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
@@ -51,4 +52,3 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
->>>>>>> c5556e095e51d7fcc5035cd9843c478ab57efdde
