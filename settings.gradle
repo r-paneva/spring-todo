@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 rootProject.name = "gradle-getting-started"
+=======
+rootProject.name = 'spring'
+>>>>>>> c5556e095e51d7fcc5035cd9843c478ab57efdde
